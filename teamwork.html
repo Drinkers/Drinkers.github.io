@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--zoomify-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/vendor/zoomify/dist/zoomify.min.js"></script>
+    <link rel="stylesheet" href="css/vendor/zoomify/dist/zoomify.min.css">
+
+    <style>
+        /* 鼠标移动到图片上，图片放大 */
+        /* div img {
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            z-index: 9999;
+        }
+
+        div img:hover {
+            transform: scale(1.1); 
+        } */
+
+        ul.nav-tabs {
+            position: fixed;
+        }
+
+        ul.nav-tabs > li > a {
+            border: 0px;
+        }
+
+        ul.nav-tabs > li > a:hover {
+            background-color: black !important;
+            border: medium none;
+            border-radius: 0;
+            color: black;
+        }
+
+        .nav-tabs {
+            border: 0;
+        }
+
+        .nav-tabs.flex-column .nav-link:not(.active){
+            background-color: rgba(256, 256, 256, 0.5);
+            /* border: 0px; */
+            color:gray;
+            /* margin-bottom: 0; */
+            padding: 10px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .nav-tabs.flex-column .nav-link.active {
+            background-color: rgba(12, 13, 14, 0.05);
+            color: black;
+            border-top: 0;
+            border-bottom: 0;
+            border-left: 0; 
+            border-right: 2px solid #ffc107;
+            /* border-right-color: #ffc107; */
+            /* margin-bottom: 0; */
+            padding: 10px;
+            font-weight: bold;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .copyright {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $('.card-img-left').zoomify();
+        })    
+
+        function change1(){
+            var imgSrc = document.getElementById("img1").getAttribute("src");
+            if(imgSrc === "暂无图像.jpg"){
+                document.getElementById("img1").src = "Baymax.gif";
+            }
+            else{
+                document.getElementById("img1").src = "暂无图像.jpg";
+            }
+        }
+
+        function change2(){
+            var imgSrc = document.getElementById("img2").getAttribute("src");
+            if(imgSrc === "暂无图像.jpg"){
+                document.getElementById("img2").src = "Baymax.gif";
+            }
+            else{
+                document.getElementById("img2").src = "暂无图像.jpg";
+            }
+        }
+
+        function change3(){
+            var imgSrc = document.getElementById("img3").getAttribute("src");
+            if(imgSrc === "暂无图像.jpg"){
+                document.getElementById("img3").src = "Baymax.gif";
+            }
+            else{
+                document.getElementById("img3").src = "暂无图像.jpg";
+            }
+        }
+    </script>
+    <title>My Teamwork</title>
+</head>
+<body data-spy="scroll" data-target="#scrollVertical" data-offset="20">    
+    <div class="container">
+            <!--navigation bar-->
+            <nav class="navbar navbar-expand-md bg-light navbar-light" role="navigation">
+                <!--logo-->
+                <a class="navbar-brand" href="#"><b>Teamwork</b></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--navbar links-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#section1"><b>section1</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2"><b>section2</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3"><b>section3</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        <div class="row">
+            <nav class="col-md-1 col-sm-1" id="scrollVertical">
+                <br>
+                <ul class="nav nav-tabs flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">section1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">section2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">section3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="col-md-11 col-sm-11">
+                <br>
+                <div class="card" id="section1">
+                    <h1 class="mx-3 mt-1">title</h1>
+                    <p class="mx-3 mt-1">content</p>
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img1" class="card-img-left" src="brain.jpg" height="360" width="480" alt="">
+                        </div>
+                        <div class="col">   
+                            <div class="card-block px-2">
+                                <h4 class="card-title">title</h4>
+                                <p class="card-text">description</p>
+                                <button type="button" class="btn btn-light" onclick="change1()">button</button>
+                                <!-- <a href="javascript:void(0)" class="btn btn-light" onClick="change()">button</a> -->
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        footer
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section2">
+                    <h1 class="mx-3 mt-1">title</h1>
+                    <p class="mx-3 mt-1">content</p>
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <!-- <iframe src="Baymax.gif" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+                            <img id="img2" class="card-img-left" src="暂无图像.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-2">
+                                <h4 class="card-title">title</h4>
+                                <p class="card-text">description</p>
+                                <button type="button" class="btn btn-warning" onclick="change2()">button</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        footer
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section3">
+                    <h1 class="mx-3 mt-1">title</h1>
+                    <p class="mx-3 mt-1">content</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img3" class="card-img-left" src="暂无图像.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-2">
+                                <h4 class="card-title">title</h4>
+                                <p class="card-text">description</p>
+                                <button type="button" class="btn btn-warning" onclick="change3()">button</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright">&copy 2019 - SY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
