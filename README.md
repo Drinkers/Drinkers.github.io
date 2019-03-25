@@ -1,2 +1,2 @@
 # Drinkers
-https://drinkers.github.io/teamwork
+[teamwork](https://drinkers.github.io/teamwork)
