@@ -94,11 +94,11 @@
 
         function change1(){
             var imgSrc = document.getElementById("img1").getAttribute("src");
-            if(imgSrc === "img/apparent_img/rb1.jpg"){
+            if(imgSrc === "img/apparent_img/rds1.jpg"){
                 document.getElementById("img1").src = "Baymax.gif";
             }
             else{
-                document.getElementById("img1").src = "img/apparent_img/rb1.jpg";
+                document.getElementById("img1").src = "img/apparent_img/rds1.jpg";
             }
         }
 
@@ -168,7 +168,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#section1">Image 1</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#section2">Image 2</a>
                     </li>
                     <li class="nav-item">
@@ -176,7 +176,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section4">Image 4</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -185,91 +185,24 @@
                 <div class="card" id="section1">
                     <br>
                     <h1 class="mx-3 mt-1">Random Dot Stereogram</h1>
-                    <p class="mx-3 mt-1">Introduction</p>
+                    <p class="mx-3 mt-1"><br>
+                        Both images appear to be composed entirely of random dots. 
+                        However, they are constructed so that a 3D image will be seen, if the images are viewed with a stereo viewer, causing the separate images to fuse. 
+                        Another way to fuse the images is to fixate on a point between them and defocus they eyes, but this technique takes some effort and practice.
+                    </p>
                     <div class="row no-gutters">
                         <!-- <div class="card-block mt-1 md-1"> -->
                             <div class="col-auto">
-                                <img id="img1" class="card-img-left" src="img/apparent_img/rb1.jpg" height="360" width="480" alt="">
+                                <img id="img1" class="card-img-left" src="img/apparent_img/rds1.jpg" height="360" width="480" alt="">
                             </div>
                         <!-- </div> -->
-                        <div class="col">   
-                            <div class="card-block px-4">
-                                <!-- <h4 class="card-title">bicycle</h4> -->
-                                <p class="card-text"><br>this is a stereoscopic bicycle</p>
-                                <button type="button" class="btn btn-warning" onclick="change1()">show original image</button>
-                                <!-- <a href="javascript:void(0)" class="btn btn-light" onClick="change()">button</a> -->
-                            </div>
-                        </div> 
                     </div>
                     <div class="card-footer w-100 text-muted">
-                        By LuYi
+                        By ChenYou
                     </div>
                 </div>
                 <br>
 
-                <div class="card" id="section2">
-                    <!-- <h1 class="mx-3 mt-1">title</h1> -->
-                    <!-- <p class="mx-3 mt-1">content</p> -->
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <!-- <iframe src="Baymax.gif" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
-                            <img id="img2" class="card-img-left" src="img/apparent_img/rb2.jpg"  height="360" width="480" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-4">
-                                <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
-                                <button type="button" class="btn btn-warning" onclick="change2()">show original image</button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="card-footer w-100 text-muted">
-                        By YangMinwen
-                    </div>
-                </div>
-                <br>
-
-                <div class="card" id="section3">
-                    <!-- <h1 class="mx-3 mt-1">title</h1> -->
-                    <!-- <p class="mx-3 mt-1">content</p> -->
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img id="img3" class="card-img-left" src="img/apparent_img/rb3.jpg"  height="360" width="480" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-4">
-                                <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
-                                <button type="button" class="btn btn-warning" onclick="change3()">show original image</button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="card-footer w-100 text-muted">
-                        By YangMinwen
-                    </div>
-                </div>
-                <br>
-
-                <div class="card" id="section4">
-                    <!-- <h1 class="mx-3 mt-1">title</h1> -->
-                    <!-- <p class="mx-3 mt-1">content</p> -->
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img id="img4" class="card-img-left" src="img/apparent_img/rb4.jpg"  height="360" width="480" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-4">
-                                <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
-                                <button type="button" class="btn btn-warning" onclick="change4()">show original image</button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="card-footer w-100 text-muted">
-                        By LuYi
-                    </div>
-                </div>
-                <br>
 
             </div>
         </div>
