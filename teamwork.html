@@ -131,6 +131,46 @@
                 document.getElementById("img4").src = "img/apparent_img/rb4.jpg";
             }
         }
+
+        function change5(){
+            var imgSrc = document.getElementById("img5").getAttribute("src");
+            if(imgSrc === "img/apparent_img/rb5.jpg"){
+                document.getElementById("img5").src = "img/original_img/rbo5.jpg";
+            }
+            else{
+                document.getElementById("img5").src = "img/apparent_img/rb5.jpg";
+            }
+        }
+
+        function change6(){
+            var imgSrc = document.getElementById("img6").getAttribute("src");
+            if(imgSrc === "img/apparent_img/rb6.jpg"){
+                document.getElementById("img6").src = "img/original_img/rbo6.jpg";
+            }
+            else{
+                document.getElementById("img6").src = "img/apparent_img/rb6.jpg";
+            }
+        }
+
+        function change7(){
+            var imgSrc = document.getElementById("img7").getAttribute("src");
+            if(imgSrc === "img/apparent_img/rb7.jpg"){
+                document.getElementById("img7").src = "img/original_img/rbo7.jpg";
+            }
+            else{
+                document.getElementById("img7").src = "img/apparent_img/rb7.jpg";
+            }
+        }
+
+        function change8(){
+            var imgSrc = document.getElementById("img8").getAttribute("src");
+            if(imgSrc === "img/apparent_img/rb8.jpg"){
+                document.getElementById("img8").src = "img/original_img/rbo8.jpg";
+            }
+            else{
+                document.getElementById("img8").src = "img/apparent_img/rb8.jpg";
+            }
+        }
     </script>
     <title>My Teamwork</title>
 </head>
@@ -139,7 +179,7 @@
             <!--navigation bar-->
             <nav class="navbar navbar-expand-md bg-light navbar-light" role="navigation">
                 <!--logo-->
-                <a class="navbar-brand" href="#"><b>Teamwork</b></a>
+                <a class="navbar-brand" href="#"><b><i>Team 6's</i> Works</b></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -177,6 +217,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#section4">Image 4</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5">Image 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section6">Image 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section7">Image 7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section8">Image 8</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -185,7 +237,20 @@
                 <div class="card" id="section1">
                     <br>
                     <h1 class="mx-3 mt-1">Anaglyph image</h1>
-                    <p class="mx-3 mt-1">Introduction</p>
+                    <p class="mx-3 mt-1"><br>
+                        <b>Principle: </b>
+                        Each eye receives a slightly different view of a scene, and this will cause a binocular disparity. 
+                        The binocular disparity information will help to form depth perception. 
+                        There are several ways to add depth, here we use the glasses with different lens. 
+                        There will be no red light that will enter the left eye, and there will be no blue light that will enter right eye. 
+                        Together, when we put two slightly different picture together, which correspond to the views received by left and right eyes, 
+                        they will form anaglyph images.<br>
+                        <b>Method: </b> 
+                        Using Photoshop, we can create anaglyph photos easily. 
+                        Open up two different layers, and add two pictures that show the scenes received by left or right eye. 
+                        Close the blue channel for the left eye layer, and close the red channel for the right eye channel. 
+                        Then save the picture. 
+                        </p>
                     <div class="row no-gutters">
                         <!-- <div class="card-block mt-1 md-1"> -->
                             <div class="col-auto">
@@ -195,14 +260,14 @@
                         <div class="col">   
                             <div class="card-block px-4">
                                 <!-- <h4 class="card-title">bicycle</h4> -->
-                                <p class="card-text"><br>this is a stereoscopic bicycle</p>
+                                <p class="card-text"><br>Bicycle </p>
                                 <button type="button" class="btn btn-warning" onclick="change1()">show original image</button>
                                 <!-- <a href="javascript:void(0)" class="btn btn-light" onClick="change()">button</a> -->
                             </div>
                         </div> 
                     </div>
                     <div class="card-footer w-100 text-muted">
-                        By LuYi
+                        By Lu Yi
                     </div>
                 </div>
                 <br>
@@ -218,13 +283,13 @@
                         <div class="col">
                             <div class="card-block px-4">
                                 <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
+                                <p class="card-text"><br>Crystal music box of a cat</p>
                                 <button type="button" class="btn btn-warning" onclick="change2()">show original image</button>
                             </div>
                         </div> 
                     </div>
                     <div class="card-footer w-100 text-muted">
-                        By YangMinwen
+                        By Yang Minwen
                     </div>
                 </div>
                 <br>
@@ -239,13 +304,13 @@
                         <div class="col">
                             <div class="card-block px-4">
                                 <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
+                                <p class="card-text"><br>Plant and two crystal music box</p>
                                 <button type="button" class="btn btn-warning" onclick="change3()">show original image</button>
                             </div>
                         </div> 
                     </div>
                     <div class="card-footer w-100 text-muted">
-                        By YangMinwen
+                        By Yang Minwen
                     </div>
                 </div>
                 <br>
@@ -260,13 +325,89 @@
                         <div class="col">
                             <div class="card-block px-4">
                                 <!-- <h4 class="card-title">title</h4> -->
-                                <p class="card-text"><br>description</p>
+                                <p class="card-text"><br>A map and a plant</p>
                                 <button type="button" class="btn btn-warning" onclick="change4()">show original image</button>
                             </div>
                         </div> 
                     </div>
                     <div class="card-footer w-100 text-muted">
-                        By LuYi
+                        By Lu Yi
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section5">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img5" class="card-img-left" src="img/apparent_img/rb5.jpg"  height="640" width="480" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-4">
+                                <!-- <h4 class="card-title">title</h4> -->
+                                <p class="card-text"><br><br>Girls in Kimono</p>
+                                <button type="button" class="btn btn-warning" onclick="change5()">show original image</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        By Yang Minwen
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section6">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img6" class="card-img-left" src="img/apparent_img/rb6.jpg"  height="640" width="480" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-4">
+                                <!-- <h4 class="card-title">title</h4> -->
+                                <p class="card-text"><br><br>Girls in Kimono</p>
+                                <button type="button" class="btn btn-warning" onclick="change6()">show original image</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        By Yang Minwen
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section7">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img7" class="card-img-left" src="img/apparent_img/rb7.jpg"  height="640" width="480" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-4">
+                                <!-- <h4 class="card-title">title</h4> -->
+                                <p class="card-text"><br><br>Nagoya City</p>
+                                <button type="button" class="btn btn-warning" onclick="change7()">show original image</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        By Yang Minwen
+                    </div>
+                </div>
+                <br>
+
+                <div class="card" id="section8">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img id="img8" class="card-img-left" src="img/apparent_img/rb8.jpg"  height="640" width="480" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-4">
+                                <!-- <h4 class="card-title">title</h4> -->
+                                <p class="card-text"><br><br>A corner of Kiyomizu Temple</p>
+                                <button type="button" class="btn btn-warning" onclick="change8()">show original image</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer w-100 text-muted">
+                        By Yang Minwen
                     </div>
                 </div>
                 <br>
